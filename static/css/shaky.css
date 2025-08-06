@@ -1,0 +1,26 @@
+.shaky {
+    display: inline-block;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+
+    font-weight: 900;
+
+    transform-origin: bottom center; /* ← 回転の軸を下端に */
+    animation: swing 4s ease-in-out infinite;
+    /* animation-direction: normal; */
+}
+
+@keyframes swing {
+    0%   { transform: rotate(0deg); }
+    60%   { transform: rotate(0deg); }
+    70%  { transform: rotate(-10deg); }
+    /* 70%  { transform: rotate(0deg); } */
+    90%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.shaky:nth-child(1) { animation-delay: 0s; }
+.shaky:nth-child(2) { animation-delay: 0.4s; }
+.shaky:nth-child(3) { animation-delay: 0.8s; }
+.shaky:nth-child(4) { animation-delay: 1.2s; }
+.shaky:nth-child(5) { animation-delay: 1.6s; }
