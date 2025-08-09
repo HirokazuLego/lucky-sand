@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function slideCharacters() {
     initAnimation();
-    document.querySelectorAll('.lucky-store').forEach(el => {
+    document.querySelectorAll('.lucky-sand').forEach(el => {
 
         const charClass = el.dataset.charClass;
         const fragment = document.createDocumentFragment();
